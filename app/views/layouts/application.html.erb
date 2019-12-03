@@ -9,13 +9,21 @@
   </head>
 
   <body>
+<div class="top-container">
     <%= render 'layouts/header' %>
-    <div class="container">
+    <div class="container img">
+      <img src="https://cdn.evbstatic.com/s3-build/perm_001/3640f4/django/images/homefeed/music-campaing-5-1080-desktop.jpg" alt="consumer-header-background">
+    </div>
+    <div class="container form">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
+    </div>
+</div>
+<main>
+</main>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
-    </div>
+  </body>
 </html>
