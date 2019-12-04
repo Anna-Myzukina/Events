@@ -6,3 +6,13 @@
 		<h4 class="media-heading">Media heading</h4>
 	</div>
 </li>
+<%= form_for(current_user.event_attendees.find_by(attended_event_id: @event.id),
+	html: { method: :delete }) do |f| %>
+	<%= f.submit "Cancel", class: "btn btn-sm btn-default" %>
+<% end %>
+<% if logged_in? %>
+	<%= form_for(current_user.event_attendees.build(attended_event_id: @event.id)) do |f| %>
+	<%= f.hidden_field :attended_event_id %>
+		<%= f.submit "Attend", class: "btn btn-sm btn-primary" %>
+	<% end %>
+<% end %>
