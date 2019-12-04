@@ -61,9 +61,8 @@ p {
 .top-container{
   display: flex;
   width: 100%;
-  height: 400px;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
-                    url("../images/bg.jpg");
+  height: 600px;
+  background-image:linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("bg.jpg");
   
       
 }
@@ -78,11 +77,12 @@ img{
   left: 100px;
   z-index: 1;
   width: 880px;
-  height: 480px;
+  height: 580px;
 }
+
 .form{
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
   background: white;
   color: #555;
   position: relative;
@@ -91,8 +91,11 @@ img{
   left: 300px;
   border: 1px solid yellowgreen;
 }
-.navbar{
+
+
+.nav-bg{
   margin: 0 !important;
+  background-image:linear-gradient( rgba(55, 6, 59, 0.5),rgba(0, 0, 255, 0.5)), url("bg.jpg");
 }
 
 #logo {
@@ -187,6 +190,7 @@ aside {
     border: 0;
 }
 .dropdown-item:hover{
+  
   background: rgba(209, 207, 207, 0.726);
 }
 .dropdown-divider{
@@ -204,7 +208,7 @@ main{
 
 footer {
   height: 400px;
-  background: orange;
+  background-color: #1e0a3c;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;

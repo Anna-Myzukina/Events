@@ -1,5 +1,8 @@
-<li class="list-group-item">
-	<%= link_to event.title, event %>
-	<br>
-	<%= event.start_time.strftime("%D - %I:%M %p") %>
+<li class="media">
+	<div class="media-left">
+		<a href="#"><%= gravatar_for user, size: 50 %></a>
+	</div>
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+	</div>
 </li>
