@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20191203134951) do
     t.integer "creator_id"
     t.text "description"
     t.string "title"
+    t.index ["creator_id"], name: "index_events_on_creator_id"
   end
 
   create_table "users", force: :cascade do |t|
