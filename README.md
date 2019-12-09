@@ -156,7 +156,7 @@ Call this user the "creator".
 
 ### In app\models\event.rb
 
-    belongs_to :creator, :class_name => "User"
+    has_many :events, :foreign_key => :creator_id
 
 ### In app\models\user.rb
 
